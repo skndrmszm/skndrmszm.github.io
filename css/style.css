@@ -20,7 +20,7 @@
 
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
-    --p-font: 1rem;
+    --p-font: 1.3rem;
 }
 
 body {
@@ -466,7 +466,6 @@ input:checked + label .description {
     :root {
         --h1-font: 4rem;
         --h2-font: 2.2rem;
-        --p-font: 15px;
     }
 }
 
@@ -668,6 +667,53 @@ input:checked + label .description {
     }
     input:checked + label {
         width: 380px;
+        height: 800px;
+        background: linear-gradient(var(--first-color), var(--bg-color));
+    }
+}
+
+@media (max-width:380px) {
+    
+    .center-text {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .container {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+    .card {
+        width: 350px;
+        height: 100px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        transition: .6s cubic-bezier(.28,-0.03,0,.99);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    }
+    .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 400px;
+        width: 520px;
+        align-items: center;
+        padding-right: 335px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+    }
+    input:checked + label {
+        width: 350px;
         height: 800px;
         background: linear-gradient(var(--first-color), var(--bg-color));
     }
