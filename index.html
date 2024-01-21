@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iskandar</title>
+    <title>Iskandar | Profile</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- box icons link -->
@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -39,7 +41,7 @@
 
     <!-- hero -->
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Hello!</h4>
             <h1>I am <span>Iskandar</span></h1>
             <p>This is my profile, but ultimately nothing is planned out yet other than the looks of it. Tengs zul later i will fill this but now no idea</p>
@@ -61,10 +63,10 @@
 
     <!-- about -->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="img/me.jpg">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-up">
             <h2>I am a Software <span>Engineer</span> Graduates</h2>
         <div class="exp-area">
             <p class="exp">
@@ -94,11 +96,11 @@
 
     <!-- skills -->
     <section class="skills" id="skills">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>My <span>Skill</span> Set</h2>
         </div>
 
-        <div class="wrapper">
+        <div class="wrapper" data-aos="zoom-in-up">
             <div class="container">
                 <input type="radio" name="slide" id="c1" checked>
                 <label for="c1" class="card">
@@ -174,5 +176,13 @@
 
     <!-- js link-->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+
 </body>
 </html>
